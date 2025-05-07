@@ -1,55 +1,60 @@
-## 🚀 **VS Code Quick Start**
+# 🎓 EduChat - AI-Powered Study Assistant
 
-## 1. **Clone Repo & Open in VS Code**
-##   ```bash
-## git clone https://github.com/yourusername/Edu_chatbot.git
-## code Edu_chatbot
-## Setup Python Environment
+## 🛠️ **Setup Guide (VS Code Optimized)**
 
-## Open VS Code terminal (Ctrl+`` `` )
+### **Prerequisites**
+- Python 3.9+
+- VS Code with [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- API Key from [Google AI Studio](https://ai.google.dev/) or [OpenAI](https://platform.openai.com/)
 
-## Create virtual env:
+---
 
-## bash
-## python -m venv .venv
-## .\.venv\Scripts\activate  # Windows
-## source .venv/bin/activate # Mac/Linux
-## Install Dependencies
+### **Step 1: Project Setup in VS Code**
+1. Clone repository:
+   ```bash
+   git clone 
 
-## bash
-## pip install -r requirements.txt
-## Configure Environment
+Open in VS Code:
+bash
+code Edu_chatbot
 
-## Create .env file (copy from .env.sample)
+Step 2: Configure Environment
+Create virtual environment:
 
-## Add your API key:
+bash
+python -m venv .venv
+Activate it:
 
-## inialize
-## GEMINI_API_KEY=your_actual_key_here
-## Run & Debug
+Windows:
 
-## Press F5 (with Flask debug configuration)
+bash
+.\.venv\Scripts\activate
 
-## Or manually:
+Mac/Linux:
+bash
+source .venv/bin/activate
+Install dependencies:
 
-## bash
-## python main.py
+bash
+pip install -r requirements.txt
 
-🌟 Features
-## Feature	Description
-📚 Multi-Subject	Physics, Chemistry, Philosophy
-🤖 AI-Powered	Gemini/OpenAI API integration
-🔒 Secure	API keys in .env
-💡 Lightweight	Single-file Flask app
-📂 VS Code Project Structure
-## bash
-Edu_chatbot/
-├── .vscode/            # VS Code configs
-│   ├── launch.json     # Flask debug profile
-│   └── settings.json
-├── main.py             # Main application
-├── static/
-│   └── style.css       # Custom styles
-├── templates/
-│   └── index.html      # Chat interface
-└── requirements.txt    # Dependencies
+Step 3: API Configuration
+Create .env file:
+
+## Write the API Key
+# For Gemini
+GEMINI_API_KEY="your_api_key_here"
+
+# OR for OpenAI
+OPENAI_API_KEY="your_api_key_here"
+
+⚠️ Add .env to .gitignore
+
+Step 4: Launch the Application
+Start Flask development server:
+
+bash
+python main.py
+Access in browser:
+
+http://localhost:5000
