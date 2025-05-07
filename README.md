@@ -32,13 +32,16 @@ bash
 
 Mac/Linux:
 bash
+
 source .venv/bin/activate
+
 Install dependencies:
 
 bash
 pip install -r requirements.txt
 
 Step 3: API Configuration
+
 Create .env file:
 
 ## Write the API Key
