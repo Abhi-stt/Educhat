@@ -1,29 +1,55 @@
-# Demo Project Educhat
-### Overview: 
-### A simple web interface where students can: 
-### 1. Select a subject (Physics, Chemistry, or Philosophy) 
-### 2. Ask subject-specific questions. 
-### 3. Receive AI-generated answers using Gemini API.
+## 🚀 **VS Code Quick Start**
 
-### Features: 
-###  Single-File flask application (“main.py”) 
-###  Basic HTML interface with Subject Selection 
-###  Direct Integration with Google Gemini API/ Open AI API 
-### File Structure: 
-### Edu_chatbot/ 
-### └── main.py # Complete application (Flask + Gemini/Open AI) 
-### └──.env # Contain  model API keys 
-### └──requirements.txt # store all libraries and packages 
+## 1. **Clone Repo & Open in VS Code**
+##   ```bash
+## git clone https://github.com/yourusername/Edu_chatbot.git
+## code Edu_chatbot
+## Setup Python Environment
 
-### Usage Guide: 
-###  Select a Subject: 
-###  Physics 
-###  Chemistry 
-###  Philosophy 
-###  Ask Questions: 
-###  Type your question in the text box 
-###  Press "Send" to get answer 
-###  Example Questions: 
-###  Physics: "Explain Newton's laws of motion" 
-###  Chemistry: "What is the periodic table?" 
-###  Philosophy: "Who was Socrates?"
+## Open VS Code terminal (Ctrl+`` `` )
+
+## Create virtual env:
+
+## bash
+## python -m venv .venv
+## .\.venv\Scripts\activate  # Windows
+## source .venv/bin/activate # Mac/Linux
+## Install Dependencies
+
+## bash
+## pip install -r requirements.txt
+## Configure Environment
+
+## Create .env file (copy from .env.sample)
+
+## Add your API key:
+
+## inialize
+## GEMINI_API_KEY=your_actual_key_here
+## Run & Debug
+
+## Press F5 (with Flask debug configuration)
+
+## Or manually:
+
+## bash
+## python main.py
+
+🌟 Features
+## Feature	Description
+📚 Multi-Subject	Physics, Chemistry, Philosophy
+🤖 AI-Powered	Gemini/OpenAI API integration
+🔒 Secure	API keys in .env
+💡 Lightweight	Single-file Flask app
+📂 VS Code Project Structure
+## bash
+Edu_chatbot/
+├── .vscode/            # VS Code configs
+│   ├── launch.json     # Flask debug profile
+│   └── settings.json
+├── main.py             # Main application
+├── static/
+│   └── style.css       # Custom styles
+├── templates/
+│   └── index.html      # Chat interface
+└── requirements.txt    # Dependencies
